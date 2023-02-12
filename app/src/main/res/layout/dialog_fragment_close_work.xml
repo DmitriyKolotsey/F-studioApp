@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="250dp"
+        android:minWidth="280dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tvButtonsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/default_rounded_menu_buttons"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/work_closing" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDayTotalTitle"
+                style="@style/tvButtonsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:lines="2"
+                android:onClick="onClickSelectInputTextView"
+                android:text="@string/days_total" />
+
+            <TextView
+                android:id="@+id/tvDayTotalValue"
+                style="@style/tvButtonsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="0"
+                android:lines="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPaymentCashTitle"
+                style="@style/tvButtonsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:lines="2"
+                android:onClick="onClickSelectInputTextView"
+                android:text="@string/payment_cash" />
+
+            <EditText
+                android:id="@+id/etPaymentCashValue"
+                style="@style/tvButtonsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:lines="2"
+                android:textColorHint="@color/grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPaymentCardTitle"
+                style="@style/tvButtonsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:lines="2"
+                android:onClick="onClickSelectInputTextView"
+                android:text="@string/payment_card" />
+
+            <EditText
+                android:id="@+id/etPaymentCardValue"
+                style="@style/tvButtonsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:lines="2"
+                android:textColorHint="@color/grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvEditPaymentTitle"
+                style="@style/tvButtonsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:lines="2"
+                android:onClick="onClickSelectInputTextView"
+                android:text="@string/payment_edit" />
+
+            <EditText
+                android:id="@+id/etEditPaymentValue"
+                style="@style/tvButtonsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:lines="2"
+                android:textColorHint="@color/grey" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCloseWork"
+            style="@style/tvButtonsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/default_rounded_menu_buttons"
+            android:clickable="true"
+            android:focusable="true"
+            android:lines="2"
+            android:text="@string/close_workday" />
+
+    </LinearLayout>
+</layout>

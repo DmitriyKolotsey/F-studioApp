@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_rounded_menu_buttons"
+    android:minWidth="200dp"
+    android:minHeight="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_rounded_menu_buttons"
+        android:layout_margin="2dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etAddedMaterialNameValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/enter_material_name"
+            android:background="@drawable/default_rounded_menu_buttons"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:text="@string/or"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:text="@string/select_from_spinner"/>
+
+            <Spinner
+                android:id="@+id/spinnerMaterialsName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:padding="2dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_rounded_menu_buttons"
+        android:layout_margin="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:text="@string/material_format_and_type" />
+
+        <EditText
+            android:id="@+id/etAddedMaterialFormatAndTypeValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:background="@drawable/default_rounded_menu_buttons"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:text="@string/material_count" />
+
+        <EditText
+            android:id="@+id/etAddedMaterialCountValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/default_rounded_menu_buttons"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:text="@string/material_cost" />
+
+        <EditText
+            android:id="@+id/etAddedMaterialCostValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:background="@drawable/default_rounded_menu_buttons"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvButtonAddNewMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="@string/add_material"
+            android:background="@drawable/active_close_order_button"/>
+
+        <TextView
+            android:id="@+id/tvButtonExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="@string/exit"
+            android:background="@drawable/default_rounded_menu_buttons"/>
+    </LinearLayout>
+</LinearLayout>
+</layout>

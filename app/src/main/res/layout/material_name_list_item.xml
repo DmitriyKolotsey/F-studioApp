@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvMaterialName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1.5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:tag="menuButtonPrint"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/default_rounded_menu_buttons" />
+
+</LinearLayout>

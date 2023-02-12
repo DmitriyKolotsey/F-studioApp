@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+
+                    <ImageView
+                        android:id="@+id/ivButtonGoToUpdateMaterialDataActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_edit_note" />
+
+                    <ImageView
+                        android:id="@+id/ivButtonGoToReportActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_table" />
+
+                    <ImageView
+                        android:id="@+id/ivAddNewMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_add" />
+
+                    <ImageView
+                        android:id="@+id/ivCloseWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_off" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvMaterialNames"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flFragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"></FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llOrderInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.5dp"
+                    android:background="@drawable/default_rounded_menu_buttons"
+                    android:onClick="onClickSelectInputTextView"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/default_rounded_menu_buttons"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/tvOrderInfoName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="0.8"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvOrderInfoFormatAndType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvOrderInfoValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llWithRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvOrderData"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_margin="5dp"
+                            android:onClick="onClickSelectInputTextView"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="1.5dp"
+                        android:background="@drawable/default_rounded_menu_buttons">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:lines="1"
+                            android:layout_margin="1.5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:text="@string/memory"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="onClickSelectInputTextView"/>
+
+                        <TextView
+                            android:id="@+id/tvMemoryValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:layout_margin="1.5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:onClick="onClickSelectInputTextView"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvOrderPaymentValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_rounded_menu_buttons"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:onClick="onClickSelectInputTextView"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvPaymentTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1.5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:onClick="onClickSelectInputTextView"
+                        android:tag="paymentTitle"
+                        android:text="@string/payment"
+                        android:textSize="27sp"
+                        android:textStyle="bold"
+                        android:theme="@style/tvButtonsStyle" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCloseOrderButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginTop="45dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickCloseOrder"
+                    android:text="@string/close_order"
+                    android:theme="@style/tvButtonsStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.5dp"
+                    android:background="@drawable/default_rounded_menu_buttons"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="2.5"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardButtonClear"
+                            android:text="@string/keyboard_C"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivKeyboardButtonDelete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="onClickKeyBoardButtonDelete"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/ic_backspace" />
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonMultiply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="1.1"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardOperation"
+                            android:text="@string/keyboard_multiply"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonSeven"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardButton"
+                            android:text="@string/keyboard_7"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonEight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardButton"
+                            android:text="@string/keyboard_8"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonNine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardButton"
+                            android:text="@string/keyboard_9"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonMinus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardOperation"
+                            android:text="@string/keyboard_minus"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardButton"
+                            android:text="@string/keyboard_4"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonFive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardButton"
+                            android:text="@string/keyboard_5"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonSix"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardButton"
+                            android:text="@string/keyboard_6"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvKeyboardButtonPlus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/keyboard_buttons_background"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:onClick="onClickKeyBoardOperation"
+                            android:text="@string/keyboard_plus"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvKeyboardButtonOne"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="1.5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/keyboard_buttons_background"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:gravity="center"
+                                        android:lines="2"
+                                        android:onClick="onClickKeyBoardButton"
+                                        android:text="@string/keyboard_1"
+                                        android:textColor="@color/black"
+                                        android:textSize="27sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvKeyboardButtonTwo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="1.5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/keyboard_buttons_background"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:gravity="center"
+                                        android:lines="2"
+                                        android:onClick="onClickKeyBoardButton"
+                                        android:text="@string/keyboard_2"
+                                        android:textColor="@color/black"
+                                        android:textSize="27sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvKeyboardButtonThree"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="1.5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/keyboard_buttons_background"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:gravity="center"
+                                        android:lines="2"
+                                        android:onClick="onClickKeyBoardButton"
+                                        android:text="@string/keyboard_3"
+                                        android:textColor="@color/black"
+                                        android:textSize="27sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvKeyboardButtonEqual"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="1.5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/keyboard_buttons_background"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:gravity="center"
+                                        android:lines="2"
+                                        android:onClick="onClickKeyBoardOperationEqual"
+                                        android:text="@string/keyboard_equal"
+                                        android:textColor="@color/black"
+                                        android:textSize="27sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvKeyboardButtonZero"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="1.5dp"
+                                        android:layout_weight="1.5"
+                                        android:background="@drawable/keyboard_buttons_background"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:gravity="center"
+                                        android:lines="2"
+                                        android:onClick="onClickKeyBoardButton"
+                                        android:text="@string/keyboard_0"
+                                        android:textColor="@color/black"
+                                        android:textSize="27sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvKeyboardButtonDot"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="1.5dp"
+                                        android:layout_weight="1.7"
+                                        android:background="@drawable/keyboard_buttons_background"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:gravity="center"
+                                        android:lines="2"
+                                        android:onClick="onClickKeyBoardButton"
+                                        android:text="@string/keyboard_dot"
+                                        android:textColor="@color/black"
+                                        android:textSize="27sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvKeyboardButtonEnter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="1.5dp"
+                                        android:layout_weight="2.3"
+                                        android:background="@drawable/keyboard_buttons_background"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:gravity="center"
+                                        android:lines="1"
+                                        android:onClick="onClickKeyBoardButtonEnter"
+                                        android:padding="5dp"
+                                        android:text="@string/keyboard_enter"
+                                        android:textColor="@color/black"
+                                        android:textSize="27sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">F-studio</string>
+    <string name="menu_buttons">svMenuButtons</string>
+
+    <string name="print">Распечатка</string>
+    <string name="lamination">Ламинирование</string>
+    <string name="stitching">Брошюровка</string>
+    <string name="thermal_print">Термопечать</string>
+    <string name="photo_print">Печать фото</string>
+    <string name="frames_albums">Рамки/Альбомы</string>
+    <string name="stationery">Канцтовары</string>
+    <string name="retouch_medallion_canvas">Ретушь, Медальон, Холст</string>
+    <string name="retouch">Ретушь</string>
+    <string name="medallion">Медальон</string>
+    <string name="canvas">Холст</string>
+    <string name="packaging">Упаковка</string>
+    <string name="drives">Диски</string>
+    <string name="format_A5">А5</string>
+    <string name="format_A4">А4</string>
+    <string name="format_A3">А3</string>
+    <string name="gr80">80гр/м2</string>
+    <string name="gr120">120гр/м2</string>
+    <string name="gr200">200гр/м2</string>
+    <string name="gr300">300гр/м2</string>
+    <string name="mkm60">60мкм</string>
+    <string name="mkm75">75мкм</string>
+    <string name="mkm150">150мкм</string>
+    <string name="mkm250">250мкм</string>
+    <string name="without_materials">Без расхода материалов</string>
+    <string name="springs">Пружины</string>
+    <string name="covers">Обложки</string>
+    <string name="transparent">Прозрачная</string>
+    <string name="white">Белая</string>
+    <string name="black">Черная</string>
+    <string name="mm6">6мм</string>
+    <string name="mm12">12мм</string>
+    <string name="mm16">16мм</string>
+    <string name="mm32">32мм</string>
+    <string name="size_20x30">20x30</string>
+    <string name="size_40x58">40x58</string>
+    <string name="size_70x100">70x100</string>
+    <string name="size_100x150">100x150</string>
+    <string name="size_10x15">10x15</string>
+    <string name="size_15x21">15x21</string>
+    <string name="size_21x30">21x30</string>
+    <string name="size_30x40">30x40</string>
+    <string name="gloss">Глянец</string>
+    <string name="matte">Матовая</string>
+    <string name="satin">Сатин</string>
+    <string name="S_gloss">С/глянец</string>
+    <string name="frame_description_1">R 01, 02, 03, 04</string>
+    <string name="frame_description_2">R 11, 12, 13, 14</string>
+    <string name="D">Д</string>
+    <string name="D01">Д01</string>
+    <string name="D02">Д02</string>
+    <string name="D03">Д03</string>
+    <string name="D04">Д04</string>
+    <string name="albums">Альбомы</string>
+    <string name="A050">А050</string>
+    <string name="A100">А100</string>
+    <string name="A200">А200</string>
+    <string name="A300">А300</string>
+    <string name="AM">АМ</string>
+    <string name="A500">А500</string>
+    <string name="A600">А600</string>
+    <string name="file_A4">Файлик А4</string>
+    <string name="file_A3">Файлик А3</string>
+    <string name="corner_folder">Папка уголок</string>
+    <string name="folder">Скоросшиватель</string>
+    <string name="folder_with_button">Папка на кнопке</string>
+    <string name="card">Открытка</string>
+    <string name="envelop">Конверт</string>
+    <string name="small_package">Пакет маленький</string>
+    <string name="medium_package">Пакет средний</string>
+    <string name="big_package">Пакет большой</string>
+    <string name="small_box">Коробка маленькая</string>
+    <string name="big_box">Коробка большая</string>
+    <string name="cd_dvd_dl">CD/DVD/DL</string>
+    <string name="cd">CD</string>
+    <string name="dvd">DVD</string>
+    <string name="dvd_dl">DVD-DL</string>
+    <string name="slim_box">Slim-box</string>
+    <string name="dvd_box">DVD-box</string>
+    <string name="order_info">Информация о заказе</string>
+    <string name="materials">Материалы</string>
+    <string name="payment">Оплата</string>
+    <string name="payment_card">Картой</string>
+    <string name="payment_cash">Наличными</string>
+    <string name="close_order">Закрыть заказ</string>
+    <string name="close_workday">Закрыть смену</string>
+    <string name="et_payment_hint">0.10</string>
+    <string name="order_type">Тип услуги:</string>
+    <string name="order_format">Формат:</string>
+    <string name="order_count">Количество:</string>
+    <string name="iv_delete_value">ivDeleteValue</string>
+    <string name="other">Другое</string>
+    <string name="keyboard_C">C</string>
+    <string name="keyboard_multiply">*</string>
+    <string name="keyboard_minus">-</string>
+    <string name="keyboard_plus">+</string>
+    <string name="keyboard_equal">=</string>
+    <string name="keyboard_dot">.</string>
+    <string name="keyboard_enter">Ввод</string>
+    <string name="keyboard_0">0</string>
+    <string name="keyboard_1">1</string>
+    <string name="keyboard_2">2</string>
+    <string name="keyboard_3">3</string>
+    <string name="keyboard_4">4</string>
+    <string name="keyboard_5">5</string>
+    <string name="keyboard_6">6</string>
+    <string name="keyboard_7">7</string>
+    <string name="keyboard_8">8</string>
+    <string name="keyboard_9">9</string>
+    <string name="additional_material_value">Количество</string>
+    <string name="change_material_cost">Стоимость</string>
+    <string name="selected_material">Выбранный материал</string>
+    <string name="select_material">Выбор материала</string>
+    <string name="column_names_name">Название</string>
+    <string name="column_names_format_and_type">Формат и тип</string>
+    <string name="column_names_type">Тип</string>
+    <string name="column_names_value">Значение</string>
+    <string name="column_names_cost">Цена</string>
+    <string name="update_materials_data">Обновить данные в БД</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">Ок</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="order_without_materials">Заказ без списания материалов. Продолжить?</string>
+    <string name="order_without_cost">Заказ без оплаты. Продолжить?</string>
+    <string name="days_total">Всего за день</string>
+    <string name="services">Услуги</string>
+    <string name="money">Выручка</string>
+    <string name="day">За день</string>
+    <string name="month">За месяц</string>
+    <string name="year">За год</string>
+    <string name="generate_report">Сгенерировать отчет</string>
+    <string name="work_closing">Закрытие смены</string>
+    <string name="exit">Выйти</string>
+    <string name="payment_edit">Корректировка</string>
+    <string name="clear_selected_material">Очистить выбранное значение</string>
+    <string name="enter_year">Введите год</string>
+    <string name="all_reports">Все отчёты</string>
+    <string name="generate_and_send_report">Сгенерировать и отправить отчёт</string>
+    <string name="urgent_photo">Срочное фото</string>
+    <string name="money_full_report">Выручка (подробный)</string>
+    <string name="enter_material_name">Название материала</string>
+    <string name="or">или</string>
+    <string name="select_from_spinner">выбор из списка</string>
+    <string name="material_format_and_type">Формат и тип материала</string>
+    <string name="material_count">Количество материала</string>
+    <string name="material_cost">Стоимость материала</string>
+    <string name="add_material">Добавить материал</string>
+    <string name="memory">M:</string>
+    <string name="create_database_backup">Создание резервной копии базы данных</string>
+    <string name="send">Отправить</string>
+    <string name="save">Сохранить</string>
+    <string name="delete_material">Удалить материал</string>
+    <string name="delete_material_format">Удалить формат</string>
+    <string name="download_report">Скачать отчёт</string>
+
+    <string-array name="materialNames">
+        <item>Распечатка</item>
+        <item>Ламинирование</item>
+        <item>Брошюровка</item>
+        <item>Термопечать</item>
+        <item>Печать фото</item>
+        <item>Рамки/Альбомы</item>
+        <item>Канцтовары</item>
+        <item>Упаковка</item>
+        <item>Диски</item>
+        <item>Срочное фото</item>
+    </string-array>
+</resources>
